@@ -1,0 +1,31 @@
+.blog-card {
+    margin: 20px;
+    padding: 30px;
+    border: 1px solid black;
+    flex: 1 1 calc(25% - 40px); /* Ensure the card takes up a quarter of the container */
+    box-sizing: border-box;
+    max-width: calc(25% - 40px); /* Ensure the card does not exceed a quarter of the container */
+}
+
+
+
+@media only screen and (max-width: 1175px) {
+    .blog-card {
+        flex: 1 1 calc(33.33% - 40px); /* Adjust to three columns */
+        max-width: calc(33.33% - 40px);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .blog-card {
+        margin: 10px; /* Smaller margin for smaller screens */
+        padding: 10px; /* Smaller padding for smaller screens */
+        flex: 1 1 calc(50% - 40px); /* Adjust to two columns */
+        max-width: calc(50% - 40px);
+    }
+}
+
+
+.blog-label {
+    background-color: brown;
+}
