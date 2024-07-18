@@ -11,6 +11,8 @@
 
 @media only screen and (max-width: 1175px) {
     .blog-card {
+        margin: 15px; /* Smaller margin for smaller screens */
+        padding: 15px; /* Smaller padding for smaller screens */
         flex: 1 1 calc(33.33% - 40px); /* Adjust to three columns */
         max-width: calc(33.33% - 40px);
     }
@@ -18,7 +20,7 @@
 
 @media only screen and (max-width: 800px) {
     .blog-card {
-        margin: 10px; /* Smaller margin for smaller screens */
+        margin: 5px; /* Smaller margin for smaller screens */
         padding: 10px; /* Smaller padding for smaller screens */
         flex: 1 1 calc(50% - 40px); /* Adjust to two columns */
         max-width: calc(50% - 40px);
@@ -28,4 +30,24 @@
 
 .blog-label {
     background-color: brown;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.blog-title {
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.blog-date {
+    margin-top: 5px;
+}
+
+.blog-description {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.blog-link {
+    text-decoration: none;
 }
