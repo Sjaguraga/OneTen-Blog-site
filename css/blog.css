@@ -1,53 +1,54 @@
 .blog-card {
-    margin: 20px;
-    padding: 30px;
-    border: 1px solid black;
-    flex: 1 1 calc(25% - 40px); /* Ensure the card takes up a quarter of the container */
-    box-sizing: border-box;
-    max-width: calc(25% - 40px); /* Ensure the card does not exceed a quarter of the container */
+  margin: 20px;
+  padding: 30px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  flex: 1 1 calc(25% - 40px); /* Ensure the card takes up a quarter of the container */
+  box-sizing: border-box;
+  max-width: calc(
+    25% - 40px
+  ); /* Ensure the card does not exceed a quarter of the container */
 }
 
-
-
 @media only screen and (max-width: 1175px) {
-    .blog-card {
-        margin: 15px; /* Smaller margin for smaller screens */
-        padding: 15px; /* Smaller padding for smaller screens */
-        flex: 1 1 calc(33.33% - 40px); /* Adjust to three columns */
-        max-width: calc(33.33% - 40px);
-    }
+  .blog-card {
+    margin: 15px; /* Smaller margin for smaller screens */
+    padding: 15px; /* Smaller padding for smaller screens */
+    flex: 1 1 calc(33.33% - 40px); /* Adjust to three columns */
+    max-width: calc(33.33% - 40px);
+  }
 }
 
 @media only screen and (max-width: 800px) {
-    .blog-card {
-        margin: 5px; /* Smaller margin for smaller screens */
-        padding: 10px; /* Smaller padding for smaller screens */
-        flex: 1 1 calc(50% - 40px); /* Adjust to two columns */
-        max-width: calc(50% - 40px);
-    }
+  .blog-card {
+    margin: 5px; /* Smaller margin for smaller screens */
+    padding: 10px; /* Smaller padding for smaller screens */
+    flex: 1 1 calc(50% - 40px); /* Adjust to two columns */
+    max-width: calc(50% - 40px);
+  }
 }
 
-
 .blog-label {
-    background-color: brown;
-    border-radius: 5px;
-    padding: 2px 5px;
+  background-color: rgb(95, 143, 209);
+  border-radius: 5px;
+  padding: 2px 5px;
 }
 
 .blog-title {
-    margin-top: 7px;
-    font-size: 20px;
+  margin-top: 7px;
+  font-size: 20px;
 }
 
 .blog-date {
-    margin-top: 5px;
+  margin-top: 5px;
+  color: grey;
 }
 
 .blog-description {
-    margin-top: 5px;
-    margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .blog-link {
-    text-decoration: none;
+  text-decoration: none;
+  color: rgb(95, 143, 209);
 }
