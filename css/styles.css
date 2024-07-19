@@ -70,12 +70,12 @@ footer {
   }
 }
 
-.post {
+/* .post {
   border: 1px solid black;
-}
+} */
 
 .post p {
-  color: red;
+  color: white;
 }
 
 .sidebar ul li {
