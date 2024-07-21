@@ -1,0 +1,113 @@
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.2fr;
+    grid-template-areas:
+      "hd hd hd hd"
+      "main main main main"
+      "main main main main"
+      "ft ft ft ft";
+  }
+  
+  .navbar {
+    background: #ebebeb;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5); /* More intense shadow */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: hd;
+  }
+  
+  article {
+    background: #ebebeb;
+    grid-area: main;
+    display: flex;
+    justify-content: center; /* Center the content in the article */
+    align-items: center; /* Center the content in the article */
+  }
+  
+  .blog-post-card {
+    width: 100%;
+    max-width: 400px; /* Set a max-width for better layout */
+    margin: 20px; /* Margin around the card */
+    background-color: #f1f3f5; /* Background color for the image card */
+    border-radius: 5px; /* Rounded corners for the card */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Card shadow */
+    overflow: hidden; /* Ensures content does not overflow */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  .blog-post-img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Limit the height of the image */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+  }
+  
+  .blog-post-content {
+    padding: 15px; /* Padding inside the content area */
+  }
+  
+  .blog-post-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .blog-post-date {
+    color: gray;
+    margin-bottom: 20px;
+  }
+  
+  .blog-post-description {
+    margin-bottom: 20px;
+  }
+  
+  .go-back {
+    text-decoration: none;
+    color: blue;
+  }
+  
+  footer {
+    background: #ebebeb;
+    grid-area: ft;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .subscribe {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  figcaption {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+  
+  .go-back {
+    background: #1f6eba;
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .go-back:hover {
+    background-color: #1961a5;
+  }
+
+  .blog-post-author img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blog-post-author {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 100%;
+  }
