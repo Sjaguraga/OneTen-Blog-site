@@ -1,0 +1,86 @@
+@import url("/assets/css/blog.css");
+@import url("/assets/css/blog-post.css");
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.2fr;
+  grid-template-areas:
+    "hd hd hd hd"
+    "sd main main main"
+    "sd main main main"
+    "ft ft ft ft";
+}
+
+header {
+  background: #ebebeb;
+  grid-area: hd;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+aside {
+  background: #ebebeb;
+  grid-area: sd;
+  padding: 20px;
+}
+
+article {
+  background: #ebebeb;
+  grid-area: main;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden; /* Ensure content does not overflow */
+}
+
+footer {
+  background: #ebebeb;
+  grid-area: ft;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.3fr auto 0.1fr;
+    grid-template-areas:
+      "hd"
+      "sd"
+      "main"
+      "ft";
+  }
+
+  .blog-card {
+    margin: 2px; /* Smaller margin for smaller screens */
+    padding: 2px; /* Smaller padding for smaller screens */
+    flex: 1 1 100%; /* Ensure the card takes up full width on smaller screens */
+    max-width: calc(100% - 25px);
+  }
+}
+
+.post p {
+  color: black;
+}
+
+.sidebar ul li {
+  list-style: none;
+}
+
+.sidebar li a {
+  color: black;
+}
+
+.sidebar h2 {
+  margin-top: 10px;
+}
+
+.subscribe {
+  text-decoration: underline;
+  cursor: pointer;
+}
