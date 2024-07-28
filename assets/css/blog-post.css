@@ -11,7 +11,7 @@
   }
   
   .navbar {
-    background: #ebebeb;
+    background: #fff6f6;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5); /* More intense shadow */
     display: flex;
     justify-content: space-evenly;
@@ -51,17 +51,19 @@
   }
   
   .blog-post-title {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-size: 1.2em;
+    margin-top: 0px;
   }
   
   .blog-post-date {
     color: gray;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    font-size: small;
   }
   
   .blog-post-description {
     margin-bottom: 20px;
+    text-decoration: underline;
   }
   
   .go-back {
@@ -111,3 +113,15 @@
     overflow: hidden;
     border-radius: 100%;
   }
+
+  .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+#bio {
+  text-align: center;
+}
+
